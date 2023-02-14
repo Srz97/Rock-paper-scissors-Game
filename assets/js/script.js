@@ -19,7 +19,7 @@ $(document).ready(function(){
             result = "Draw";
         }
         if(check_cliked_option > rendom_int){
-            result = "Player wins";
+            result = "You win!";
         }
         if(check_cliked_option < rendom_int){
             result = "Computer wins";

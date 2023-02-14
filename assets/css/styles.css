@@ -23,9 +23,9 @@ background: rgba(170, 224, 229, 0.827);
     margin: auto;
     padding: 50px 0;
     background-color: #92caca;
+    text-align: center;
 }
 .score-area {
-    background-color: antiquewhite;
     margin: 5px auto;
     width: 60%;
     font-size: 1.2rem;

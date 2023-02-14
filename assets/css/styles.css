@@ -7,7 +7,6 @@ background: rgba(170, 224, 229, 0.827);
     font-size: 2.5rem;
 }
 .game-area {
-    background-color: #E6ECF0;
     box-sizing: border-box;
     width: 85%;
     max-height: 450px;

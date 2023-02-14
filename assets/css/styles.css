@@ -36,8 +36,10 @@ background: rgba(170, 224, 229, 0.827);
 }
 .btn {
     width: 220px;
-    height: 60px;
+    height: 189px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     font-size: xxx-large;
+    margin: 2px;
+    border: none;
 }

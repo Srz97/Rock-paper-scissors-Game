@@ -10,12 +10,12 @@ background: rgba(170, 224, 229, 0.827);
     background-color: #E6ECF0;
     box-sizing: border-box;
     width: 85%;
-    height: 65vh;
     max-height: 450px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+    text-align: center;
 }
 .result-area {
     width: 50%;

@@ -50,5 +50,8 @@ $(document).ready(function(){
         // activate game again
         $(".player-area").addClass("active");
       });
+      $( "#rules-btn" ).click(function(){
+         alert("Rock wins against scissors; paper wins against rock; and scissors wins against paper. If both players throw the same hand signal, it is considered a tie.")
+      });
 });
 

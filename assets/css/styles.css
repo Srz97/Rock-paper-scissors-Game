@@ -22,7 +22,7 @@ background: rgba(170, 224, 229, 0.827);
     font-size: 2rem;
     margin: auto;
     padding: 50px 0;
-    background-color: aqua;
+    background-color: #92caca;
 }
 .score-area {
     background-color: antiquewhite;
@@ -43,9 +43,11 @@ background: rgba(170, 224, 229, 0.827);
     margin: 2px;
     border: none;
 }
-.rules {
-    border: none;
+.rules button{
     margin-left: 10%;
-    font-size: large;
     margin-bottom: 1%;
+    font-size: inherit;
+    border: none;
+    background: inherit;
+    
 }

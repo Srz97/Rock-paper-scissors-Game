@@ -43,3 +43,9 @@ background: rgba(170, 224, 229, 0.827);
     margin: 2px;
     border: none;
 }
+.rules {
+    border: none;
+    margin-left: 10%;
+    font-size: large;
+    margin-bottom: 1%;
+}

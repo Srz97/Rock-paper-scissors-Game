@@ -2,6 +2,7 @@
 
 
 $(document).ready(function(){
+
     $(".computer-area .btn").hide();
     $( ".player-area  .btn--click" ).click(function() {
         $(".player-area .btn--click").hide();
@@ -27,6 +28,10 @@ $(document).ready(function(){
         $(".result-area").html(result);
 
         
+      });
+      $( "#reset-btn" ).click(function() {
+        $(".computer-area .btn").hide();
+        $(".player-area .btn--click").show();
       });
 });
 

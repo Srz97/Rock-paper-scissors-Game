@@ -41,6 +41,7 @@ background: rgba(170, 224, 229, 0.827);
     font-size: xxx-large;
     margin: 2px;
     border: none;
+    display: inline-block;
 }
 .rules button{
     margin-left: 10%;

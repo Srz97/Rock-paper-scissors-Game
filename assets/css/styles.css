@@ -15,6 +15,7 @@ background: rgba(170, 224, 229, 0.827);
     margin-right: auto;
     padding: 1%;
     text-align: center;
+   
 }
 .result-area {
     width: 50%;
@@ -23,15 +24,18 @@ background: rgba(170, 224, 229, 0.827);
     padding: 50px 0;
     background-color: #92caca;
     text-align: center;
+   
 }
 .score-area {
     margin: 5px auto;
     width: 60%;
     font-size: 1.2rem;
+   
 }
 .controls-area {
     width: 85%;
     margin: 30px auto;
+    display: inline-block;
 }
 .btn {
     width: 220px;
@@ -50,4 +54,10 @@ background: rgba(170, 224, 229, 0.827);
     border: none;
     background: inherit;
     
+}
+.player-area {
+    display: inline-block;
+}
+.computer-area {
+    display: inline-block;
 }

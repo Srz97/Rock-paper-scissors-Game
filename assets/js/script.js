@@ -33,6 +33,9 @@ $(document).ready(function(){
             }
             if(check_cliked_option < rendom_int){
                 result = "Computer wins";
+                var current_co_score = parseInt($(".computers-score span").html());
+                current_co_score = current_co_score + 1;
+                $(".computers-score span").html(current_co_score)
             }
             $(".result-area").html(result);
             // remove the active class once game is finish 

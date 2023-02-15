@@ -22,7 +22,6 @@ background: rgba(170, 224, 229, 0.827);
     font-size: 2rem;
     margin: auto;
     padding: 50px 0;
-    background-color: #92caca;
     text-align: center;
    
 }
@@ -30,6 +29,7 @@ background: rgba(170, 224, 229, 0.827);
     margin: 5px auto;
     width: 60%;
     font-size: 1.2rem;
+    text-align: center;
    
 }
 .controls-area {
@@ -48,7 +48,7 @@ background: rgba(170, 224, 229, 0.827);
     display: inline-block;
 }
 .rules button{
-    margin-left: 10%;
+    margin-left: 1%;
     margin-bottom: 1%;
     font-size: inherit;
     border: none;

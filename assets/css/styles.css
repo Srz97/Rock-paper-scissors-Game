@@ -94,4 +94,23 @@ background: rgba(170, 224, 229, 0.827);
     .btn {
         background-color: inherit;
 }
+.result-area {
+    padding: 25px 
+}}
+@media (max-width: 350px){
+    .btn {
+        width: 97px;
+        height: 106px;
+        margin: 1px;
+}
+.heading {
+    font-size: 1.5em;
+}
+.heading {
+    font-size: 1.5em;
+
+}
+.rules button {
+    font-size: medium;
+}
 }

@@ -61,3 +61,37 @@ background: rgba(170, 224, 229, 0.827);
 .computer-area {
     display: inline-block;
 }
+@media (max-width: 800px) {
+    .btn {
+        width: 203px;}
+    }
+    @media (max-width: 730px) {
+        .btn {
+            width: 172px;
+            height: 158px;
+            margin: 1px;
+    }}
+    @media (max-width: 665px){
+
+        .heading {
+            text-align: center;
+            font-size: 2.0rem;
+        }
+        .rules button {
+            font-size: larger;
+        }
+    }
+    @media (max-width: 655px){
+        .game-area {
+            width: 100%;
+        }
+        .btn {
+            width: 159px;
+            height: 138px;
+    }
+}
+@media (max-width: 525px){
+    .btn {
+        background-color: inherit;
+}
+}

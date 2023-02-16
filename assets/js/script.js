@@ -49,6 +49,7 @@ $(document).ready(function(){
         $(".player-area .btn--click").show();
         // activate game again
         $(".player-area").addClass("active");
+        $(".result-area").html("Choose your Warrior")
       });
       $( "#rules-btn" ).click(function(){
          alert("Rock wins against scissors; paper wins against rock; and scissors wins against paper. If both players throw the same hand signal, it is considered a tie.")

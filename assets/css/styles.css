@@ -1,8 +1,8 @@
 body {
 font-family: 'Gentium Book Plus', serif;
-bbackground: #74ebd5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+bbackground: #74ebd5;  
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  
+background: linear-gradient(to right, #ACB6E5, #74ebd5); 
 
 }
 .heading {
@@ -51,6 +51,12 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
     display: inline-block;
     background-color: inherit;
 }
+/* Zoom on Hover*/
+.btn:hover {
+    transform: scale(1.5);
+}
+.btn {cursor: -webkit-grab; cursor: grab;}
+
 .rules button{
     margin-left: 1%;
     margin-bottom: 1%;
@@ -59,6 +65,10 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
     background: inherit;
     
 }
+.rules button:hover {
+    background-color: rgb(10, 241, 218);
+}
+.rules button {cursor: -webkit-grab; cursor: grab;}
 .player-area {
     display: inline-block;
 }

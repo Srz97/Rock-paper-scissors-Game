@@ -1,6 +1,9 @@
 body {
 font-family: 'Gentium Book Plus', serif;
-background: rgba(170, 224, 229, 0.827);
+bbackground: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .heading {
     text-align: center;
@@ -9,7 +12,7 @@ background: rgba(170, 224, 229, 0.827);
 .game-area {
     box-sizing: border-box;
     width: 85%;
-    max-height: 450px;
+    
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -46,6 +49,7 @@ background: rgba(170, 224, 229, 0.827);
     margin: 2px;
     border: none;
     display: inline-block;
+    background-color: inherit;
 }
 .rules button{
     margin-left: 1%;

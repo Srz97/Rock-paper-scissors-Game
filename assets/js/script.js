@@ -20,7 +20,7 @@ $(document).ready(function(){
             var result = "";
 
             if(check_cliked_option == rendom_int){
-                result = "Draw";
+                result = "Oh it's a Draw";
                 var current_ti_score = parseInt($(".draw span").html());
                 current_ti_score = current_ti_score + 1;
                 $(".draw span").html(current_ti_score)

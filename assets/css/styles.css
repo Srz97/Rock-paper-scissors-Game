@@ -131,7 +131,12 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
 
 }
 .rules button {
-    font-size: medium;
+    font-size: small;
+    margin-left: 15%;
+    margin-bottom: 9%;
+    margin-top: 20%;
+    
+
 }
 .result-area{
     font-size: 1rem; 
@@ -163,7 +168,6 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
   }
   /* The Close Button */
   .close {
-    color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;

@@ -26,13 +26,13 @@ $(document).ready(function(){
                 $(".draw span").html(current_ti_score)
             }
             if(check_cliked_option > rendom_int){
-                result = "You won!";
+                result = " Congratulations You won!";
                 var current_wi_score = parseInt($(".your-score span").html());
                 current_wi_score = current_wi_score + 1;
                 $(".your-score span").html(current_wi_score)
             }
             if(check_cliked_option < rendom_int){
-                result = "Computer wins";
+                result = "Your device wins";
                 var current_co_score = parseInt($(".computers-score span").html());
                 current_co_score = current_co_score + 1;
                 $(".computers-score span").html(current_co_score)

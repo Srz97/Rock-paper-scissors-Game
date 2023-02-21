@@ -20,7 +20,7 @@ Rock paper scissors (also known by other orderings of the three items, with "roc
 
   # Colour Scheme
   
-  I chose a  mix of dark and light colours which includes combination of perivinkel and turquoise for the backgrounds. The instruction page has a silver background.The buttons turn yellow on hover.The mixture of modern color scheme combination allows user to have a delightfull experiance.
+  I chose a  mix of dark and light colours which includes combination of perivinkel and turquoise for the background with the help of  [Grabient Colors](https://cssgradient.io/gradient-backgrounds/). The instruction page has a silver background while the buttons turn yellow on hover.The mixture of modern color scheme combination allows user to have a delightfull experiance.
   
   <img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-two.png">
   

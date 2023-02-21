@@ -39,5 +39,15 @@ For the layout of the page, I chose to create a game window with two buttons on 
   <img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-four.png">
   
   
+ # Rules
   
-  
+* Rock beats scissors and loses to paper. chose the symbol which closed fist to throw a rock out. This powerful play is strong enough to break the fragile scissors, but can’t fight its way past the paper, which wraps itself around the rock to suffocate it
+* Scissors beat paper but loses to rock. Play scissors by making sure to pick the sign with your index and middle finger. The sharp scissors carve through paper with ease, but they’re too weak to stand up to a rock slamming into them.
+* Paper beats rock, but loses to scissors. Chose the icon which lay fingers flat and keep them together to play paper. The slick and flexible paper wraps around the rock to lock it down, but it can’t fight back against the sharp scissors.
+
+# Result
+
+* The reults are displayed immediately after the choice slected by the user and are recoreded on the number of times the game is played.
+* The live results are shown on the bottom of the page which keep the user motvated to play and keep acknowledged about the game.
+* If the user wins so its mentioned and recorded same is the case with computer.
+* Upon a draw it's calculates as a Tie. 

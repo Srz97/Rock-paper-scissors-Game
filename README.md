@@ -20,7 +20,7 @@ Rock paper scissors (also known by other orderings of the three items, with "roc
 
   # Colour Scheme
   
-  I chose a  mix of dark and light colours which includes combination of perivinkel and turquoise for the background with the help of  [Grabient Colors](https://cssgradient.io/gradient-backgrounds/). The instruction page has a silver background while the buttons turn yellow on hover.The mixture of modern color scheme combination allows user to have a delightfull experiance.
+  I have chosen a mixture of dark and light colours which includes combination of perivinkel and turquoise for the background with the help of  [Grabient Colors](https://cssgradient.io/gradient-backgrounds/).The instruction page has a silver background while the buttons turn yellow on hover.The mixture of modern color scheme combination allows user to have a delightfull experiance.
   
   <img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-two.png">
   
@@ -91,18 +91,11 @@ For the layout of the page, I chose to create a game window with two buttons on 
 
 * This game was deployed to github pages.
 
-Open the repository settings.
-Go to "pages" (found under "code and automation").
-Choose which branch to build from. You want to choose "main". Do not forget to save the settings.
-(If needed, choose a custom domain)
-Open the repository in github desktop (I used github desktop. You can do this in git too.)
-Choose to create a local clone (the first time you open your repository in github desktop, there should be a window asking if you want to create a clone)
-Copy the link to your deployed website (which can be found in the github pages settings, where you chose which branch to build from) and make sure it is operating as expected.
-The deployed website will now be updated when you push anything new to the repository.
-Forking and cloning
-Forking is creating a new repository with the same content as the one you forked.
-This is done by going to the repository you want to clone, and clicking the "fork" icon in the top right corner.
-Cloning is used for making local copies of your code.
-Cloning a repository with github desktop is easily done by clicking the green "code" button and choosing the "open in github desktop" option. If you do not have a clone already, github desktop will ask if you want to create a local clone. Click yes.
-If you do it with git you have to write "git clone" and then specify what you want to clone.
+* Open the repository settings.
+* Go to "pages" (found under "code and automation").
+* Choose which branch to build from. You want to choose "main". Do not forget to save the settings.
+* Open the repository in github desktop (I used github desktop. You can do this in git too.)
+* Choose to create a local clone.
+* Copy the link to your deployed website (which can be found in the github pages settings, where you chose which branch to build from) and make sure it is   operating as expected.
+* The deployed website will now be updated when you push anything new to the repository.
 

@@ -83,6 +83,22 @@ For the layout of the page, I chose to create a game window with two buttons on 
 <img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-eight.jpg">
 
 
+* Javascript validator
+
+[Jshint](https://jshint.com/) was used the test has shown the following data;
+
+CONFIGURE
+Metrics
+There are 7 functions in this file.
+
+Function with the largest signature take 1 arguments, while the median is 0.
+
+Largest function has 24 statements in it, while the median is 2.
+
+The most complex function has a cyclomatic complexity value of 5 while the median is 1.
+
+
+
 # Unfixed bugs
 
 * No unfixed bugs.

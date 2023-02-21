@@ -123,3 +123,4 @@ The most complex function has a cyclomatic complexity value of 5 while the media
 * Icons were created by [Font Awesome](https://fontawesome.com/)
 * [Favi Icons](https://www.favicon.cc/) was created using this web page.
 * Information and details were gather from [Wikipedia](https://sv.wikipedia.org/wiki/Portal:Huvudsida)
+* [Colors](https://coolors.co/acb6e5-74ebd5-aaaaaa-151516-ffe66d) were created with the help of this web page.

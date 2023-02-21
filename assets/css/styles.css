@@ -21,9 +21,7 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
 }
 .icon-name {
     font-size: small;
-}
- {
-    font-size: small;
+    display: none;
 }
 .result-area {
     width: 50%;

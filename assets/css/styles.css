@@ -164,6 +164,11 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
     font-size: 28px;
     font-weight: bold;
   }
+  .modal-list{
+    text-align: center;
+    padding: auto;
+    list-style-type: none; 
+  }
   .close:hover,
   .close:focus {
     color: black;

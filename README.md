@@ -115,3 +115,11 @@ The most complex function has a cyclomatic complexity value of 5 while the media
 * Copy the link to your deployed website (which can be found in the github pages settings, where you chose which branch to build from) and make sure it is   operating as expected.
 * The deployed website will now be updated when you push anything new to the repository.
 
+# Credits
+
+
+* Code assistence and jQuery were used from [W3 Schools](https://www.w3schools.com/java/) & [Stack overflow](https://stackoverflow.com/questions/5132323/aligning-a-div-to-center-of-page-while-its-position-is-absolute) 
+* [Gradient](https://cssgradient.io/gradient-backgrounds/) was used to create the background.
+* Icons were created by [Font Awesome](https://fontawesome.com/)
+* [Favi Icons](https://www.favicon.cc/) was created using this web page.
+* Information and details were gather from [Wikipedia](https://sv.wikipedia.org/wiki/Portal:Huvudsida)

@@ -80,7 +80,7 @@ For the layout of the page, I chose to create a game window with two buttons on 
 <img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-seven.png">
 
 * This was the lighthouse result:
-<img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-eight.png">
+<img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-eight.jpg">
 
 
 # Unfixed bugs

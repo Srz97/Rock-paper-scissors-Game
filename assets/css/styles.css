@@ -54,20 +54,23 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
 .btn:hover {
     transform: scale(1.5);
 }
-.btn {cursor: -webkit-grab; cursor: grab;}
+.btn {
+    cursor: -webkit-grab; cursor: grab;
+}
 
 .rules button{
     margin-left: 1%;
     margin-bottom: 1%;
     font-size: inherit;
     border: none;
-    background: inherit;
-    
+    background: inherit; 
 }
 .rules button:hover {
     background-color: #FFE66D;
 }
-.rules button {cursor: -webkit-grab; cursor: grab;}
+.rules button {
+    cursor: -webkit-grab; cursor: grab;
+}
 .player-area {
     display: inline-block;
 }
@@ -154,7 +157,6 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
     text-align: center;
     font-size: large;
   }
-  
   /* The Close Button */
   .close {
     color: #aaa;
@@ -162,7 +164,6 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
     font-size: 28px;
     font-weight: bold;
   }
-  
   .close:hover,
   .close:focus {
     color: black;

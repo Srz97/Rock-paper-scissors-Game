@@ -26,7 +26,7 @@ Rock paper scissors (also known by other orderings of the three items, with "roc
   
 # Design & Typography
 
-I wanted the game to look a bit like an modern game, and inspires by it's simplicity. To achieve that I chose a font of Gentium Book Plus that looked very peaceful and styled the game window like smoth and easy going with a mirthfull game.Font awsome is used for the icons.
+I wanted the game to look a bit like an modern game, and inspires by it's simplicity. To achieve that I chose a font of Gentium Book Plus that looked very peaceful and styled the game window like smoth and easy going with a mirthfull game desiged by the font  chosen with the hep of [Font Awesome](https://fontawesome.com/).
 
 
   <img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-three.png">
@@ -51,3 +51,9 @@ For the layout of the page, I chose to create a game window with two buttons on 
 * The live results are shown on the bottom of the page which keep the user motvated to play and keep acknowledged about the game.
 * If the user wins so its mentioned and recorded same is the case with computer.
 * Upon a draw it's calculates as a Tie. 
+
+
+<img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-six.png">
+
+
+

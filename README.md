@@ -31,7 +31,7 @@ I wanted the game to look a bit like an modern game, and inspires by it's simpli
 
   <img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-three.png">
   
-# General Features on Each Page
+# General Features
 
 For the layout of the page, I chose to create a game window with two buttons on the left top corner which makes it clear for the user if they want to have a look at rules on how to play? or just reset the game after playing it once. Upon click on the Rules button,I chose to have the rules accessible in a modal Box  which is displayed on top of the current page. Which further explains the  "Rock, paper, scissors" game in order to avoid any confusion about the result I chose to display their symbols along with their meanings which is aimed to clarify the user and to have full confidence over the game.
 

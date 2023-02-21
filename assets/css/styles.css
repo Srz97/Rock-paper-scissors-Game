@@ -1,6 +1,5 @@
 body {
 font-family: 'Gentium Book Plus', serif;
-bbackground: #74ebd5;  
 background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  
 background: linear-gradient(to right, #ACB6E5, #74ebd5); 
 
@@ -66,7 +65,7 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
     
 }
 .rules button:hover {
-    background-color: rgb(10, 241, 218);
+    background-color: #FFE66D;
 }
 .rules button {cursor: -webkit-grab; cursor: grab;}
 .player-area {
@@ -111,7 +110,7 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
 .result-area {
     padding: 25px 
 }}
-@media (max-width: 350px){
+@media (max-width: 375px){
     .btn {
         width: 97px;
         height: 106px;
@@ -126,6 +125,9 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
 }
 .rules button {
     font-size: medium;
+}
+.result-area{
+    font-size: 1rem; 
 }
 }
 /* The Modal (background) */

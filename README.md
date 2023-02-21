@@ -45,6 +45,14 @@ For the layout of the page, I chose to create a game window with two buttons on 
 * Scissors beat paper but loses to rock. Play scissors by making sure to pick the sign with your index and middle finger. The sharp scissors carve through paper with ease, but they’re too weak to stand up to a rock slamming into them.
 * Paper beats rock, but loses to scissors. Chose the icon which lay fingers flat and keep them together to play paper. The slick and flexible paper wraps around the rock to lock it down, but it can’t fight back against the sharp scissors.
 
+
+# Game window  
+
+* Upon hover over the upon the Icon it pops up which then  easily allows the user the select thier warrior.
+* Simultaneously upon the click, computer aswell chooses an random Warrior.
+* The results are displayed right beneath the Icons.
+
+
 # Result
 
 * The reults are displayed immediately after the choice slected by the user and are recoreded on the number of times the game is played.
@@ -55,5 +63,15 @@ For the layout of the page, I chose to create a game window with two buttons on 
 
 <img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-six.png">
 
+
+# Languages Used
+
+* HTML
+* CSS
+* Javascript
+
+# Testing 
+
+<img src="https://srz97.github.io/Rock-paper-scissors-Game/assets/images/image-five.png">
 
 

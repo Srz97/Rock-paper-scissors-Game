@@ -19,6 +19,12 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5);
     text-align: center;
    
 }
+.icon-name {
+    font-size: small;
+}
+ {
+    font-size: small;
+}
 .result-area {
     width: 50%;
     font-size: 2rem;

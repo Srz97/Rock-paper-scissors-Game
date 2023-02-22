@@ -118,6 +118,13 @@ The most complex function has a cyclomatic complexity value of 5 while the media
 * Copy the link to your deployed website (which can be found in the github pages settings, where you chose which branch to build from) and make sure it is   operating as expected.
 * The deployed website will now be updated when you push anything new to the repository.
 
+ # Forking and cloning
+* Forking is creating a new repository with the same content as the one you forked.
+* This is done by going to the repository you want to clone, and clicking the "fork" icon in the top right corner.
+* Cloning is used for making local copies of your code.
+* Cloning a repository with github desktop is easily done by clicking the green "code" button and choosing the "open in github desktop" option. If you do not have a clone already, github desktop will ask if you want to create a local clone. Click yes.
+*If you do it with git you have to write "git clone" and then specify what you want to clone.
+
 # Credits
 
 

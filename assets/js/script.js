@@ -26,7 +26,7 @@ $(document).ready(function(){
                 $(".draw span").html(current_ti_score)
             }
             if(check_cliked_option > rendom_int){
-                result = " Congratulations You won!";
+                result = "You won!";
                 var current_wi_score = parseInt($(".your-score span").html());
                 current_wi_score = current_wi_score + 1;
                 $(".your-score span").html(current_wi_score)

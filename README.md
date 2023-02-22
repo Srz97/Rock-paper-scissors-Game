@@ -101,7 +101,7 @@ The most complex function has a cyclomatic complexity value of 5 while the media
 
 # Bugs
  * Fixed bugs
- * While testing in light house, I discovered that the accessibility was a bit low, which was fixed by providimg each button with a specific Name.
+ * While testing in light house, I discovered that the accessibility was a bit low, which was fixed by providing each button with a specific Name.
  
 * Unfixed bugs
 * Favicon is displayed after couple of seconds.

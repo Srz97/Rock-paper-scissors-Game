@@ -1,101 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta information -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!--Importing the font used in this game-->
- <script src="https://kit.fontawesome.com/6618333e0a.js" crossorigin="anonymous"></script>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Lato:wght@300&display=swap" rel="stylesheet">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Inconsolata&family=Lato:wght@300&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    
+    <!-- Importing fonts and stylesheets -->
+    <script src="https://kit.fontawesome.com/6618333e0a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Google Fonts link for more fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Inconsolata&family=Lato:wght@300&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    
+    <!-- Link to your custom stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Link to jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 
+      <!-- Adding a favicon -->
+      <link rel="icon" type="image" href="/assets/images/favicon.ico">
+    
+    <!-- Title of the page -->
     <title>Rock paper scissors</title>
-    <!-- Adding a favicon-->
-    <link rel="icon" type="image" href="/assets/images/favicon.ico">
+    
 </head>
 <body>
+    <!-- Rules section -->
     <div class="rules">
+        <!-- Button to open rules modal -->
         <button id="rules-btn">Rules</button>
         <!-- The Modal -->
-<div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h1>Rules</h1>
-      <div class="icon-game">
-        <i class="far fa-hand-rock"></i>
-        <p>Rock</p>
-        <i class="fa-solid fa-hands"></i>
-        <p>Paper</p>
-        <i class="far fa-hand-scissors"></i>
-        <p>Scissors</p>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <!-- Close button for the modal -->
+                <span class="close">&times;</span>
+                <!-- Title of the modal -->
+                <h1>Rules</h1>
+                <!-- Icon explanations -->
+                <div class="icon-game">
+                    <!-- Rock icon and description -->
+                    <i class="far fa-hand-rock"></i>
+                    <p>Rock</p>
+                    <!-- Paper icon and description -->
+                    <i class="fa-solid fa-hands"></i>
+                    <p>Paper</p>
+                    <!-- Scissors icon and description -->
+                    <i class="far fa-hand-scissors"></i>
+                    <p>Scissors</p>
+                </div>
+                <!-- List of rules -->
+                <ul class="modal-list">
+                    <li>Rock wins against scissors.</li>
+                    <li>Paper wins against rock.</li>
+                    <li>Scissors wins against paper.</li>
+                </ul>
+                <!-- Explanation of ties -->
+                <p>If both players throw the same hand signal, it is considered a tie, and play resumes until there is a clear winner.</p>
+            </div>
         </div>
-        <ul class="modal-list">
-      <li>Rock wins against scissors.</li>
-      <li>Paper wins against rock.</li>
-      <li>Scissors wins against paper.</li>
-    </ul>
-    <p>If both players throw the same hand signal, it is considered a tie, and play resumes until there is a clear winner.</p>
-    </div>
-  
-  </div>
+        <!-- Button to reset the game -->
         <button id="reset-btn">Reset Game</button>
     </div>
-    <h1 class="heading">lets Play!</h1>
-<div class="game-box">
-    <h2 class="heading">Rock Paper Scissors</h2>
-   
     
-    <div class="game-area">
-        <div class="player-area active">
-
-            <button class="btn btn--big btn--Rock btn--click" value="2">
-             <i class="far fa-hand-rock"></i>
-         <h3 class="icon-name">Rock</h3></button>
-
-            <button class="btn btn--big btn--Paper btn--click" value="3">
-                <i class="fa-solid fa-hands"></i>
-              <h3 class="icon-name">Paper</h3></button>
-
-            <button class="btn btn--big btn--Scissors btn--click" value="1">
-            <i class="far fa-hand-scissors"></i>
-            <h3 class="icon-name">Scissors</h3></button>
-            
-        </div>
-        <div class="computer-area">
-
-            <button class="btn btn--big btn--Rock btn--game-2">
-             <i class="far fa-hand-rock"></i>
-             <h3 class="icon-name">Rock</h3></button>
-
-            <button class="btn btn--big btn--Paper btn--game-3">
-                <i class="fa-solid fa-hands"></i>
-                <h3 class="icon-name">Paper</h3></button>
-
-            <button class="btn btn--big btn--Scissors btn--game-1">
-            <i class="far fa-hand-scissors"></i>
-            <h3 class="icon-name">Scissors</h3></button>
-            
+    <!-- Game title and description -->
+    <h1 class="heading">Let's Play!</h1>
+    <div class="game-box">
+        <h2 class="heading">Rock Paper Scissors</h2>
+        <!-- Game area -->
+        <div class="game-area">
+            <!-- Player area -->
+            <div class="player-area active">
+                <!-- Button to choose rock -->
+                <button class="btn btn--big btn--Rock btn--click" value="2">
+                    <i class="far fa-hand-rock"></i>
+                    <h3 class="icon-name">Rock</h3>
+                </button>
+                <!-- Button to choose paper -->
+                <button class="btn btn--big btn--Paper btn--click" value="3">
+                    <i class="fa-solid fa-hands"></i>
+                    <h3 class="icon-name">Paper</h3>
+                </button>
+                <!-- Button to choose scissors -->
+                <button class="btn btn--big btn--Scissors btn--click" value="1">
+                    <i class="far fa-hand-scissors"></i>
+                    <h3 class="icon-name">Scissors</h3>
+                </button>
+            </div>
+            <!-- Computer area -->
+            <div class="computer-area">
+                <!-- Button for computer to choose rock -->
+                <button class="btn btn--big btn--Rock btn--game-2">
+                    <i class="far fa-hand-rock"></i>
+                    <h3 class="icon-name">Rock</h3>
+                </button>
+                <!-- Button for computer to choose paper -->
+                <button class="btn btn--big btn--Paper btn--game-3">
+                    <i class="fa-solid fa-hands"></i>
+                    <h3 class="icon-name">Paper</h3>
+                </button>
+                <!-- Button for computer to choose scissors -->
+                <button class="btn btn--big btn--Scissors btn--game-1">
+                    <i class="far fa-hand-scissors"></i>
+                    <h3 class="icon-name">Scissors</h3>
+                </button>
+            </div>
         </div>
     </div>
-</div>
+    
+    <!-- Result area -->
     <div class="result-area">
         Choose your Warrior 
     </div>
+    
+    <!-- Score area -->
     <div class="score-area">
+        <!-- Your score -->
         <div class="your-score">You won:<span>0</span></div>
+        <!-- Computer's score -->
         <div class="computers-score">Computer won:<span>0</span></div>
+        <!-- Tie score -->
         <div class="draw">Tie:<span>0</span></div>
     </div>
-
+    
+    <!-- Link to your JavaScript file -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>

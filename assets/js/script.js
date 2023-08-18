@@ -1,80 +1,69 @@
-
-
-
 $(document).ready(function(){
 
-    $(".computer-area .btn").hide();
-    $( ".player-area.active  .btn--click" ).click(function() {
-        //checking condition either the game is active or not 
-        if($(".player-area").hasClass("active") == true){
-            //if the game is active then run the below code 
-            $(".player-area .btn--click").hide();
-            $(this).show();
+  $(".computer-area .btn").hide();
+  $( ".player-area.active  .btn--click" ).click(function() {
+      // Checking if the game is active
+      if($(".player-area").hasClass("active") == true){
+          // Hide player buttons and show the clicked button
+          $(".player-area .btn--click").hide();
+          $(this).show();
 
-            var check_cliked_option = $(this).attr("value");
-                
-            var rendom_int = Math.floor((Math.random() * 3) + 1);
-            
-            $(".computer-area .btn--game-"+rendom_int).show();
+          // Get the value of the clicked option
+          var playerChoice = parseInt($(this).attr("value"));
+              
+          // Generate a random integer between 1 and 3 for computer's choice
+          var computerChoice = Math.floor((Math.random() * 3) + 1);
+          
+          // Show the computer's selected button
+          $(".computer-area .btn--game-" + computerChoice).show();
 
-            var result = "";
+          // Initialize result string
+          var result = "";
 
-            if(check_cliked_option == rendom_int){
-                result = "Oh it's a Draw";
-                var current_ti_score = parseInt($(".draw span").html());
-                current_ti_score = current_ti_score + 1;
-                $(".draw span").html(current_ti_score)
-            }
-            if(check_cliked_option > rendom_int){
-                result = "You won!";
-                var current_wi_score = parseInt($(".your-score span").html());
-                current_wi_score = current_wi_score + 1;
-                $(".your-score span").html(current_wi_score)
-            }
-            if(check_cliked_option < rendom_int){
-                result = "Your device wins";
-                var current_co_score = parseInt($(".computers-score span").html());
-                current_co_score = current_co_score + 1;
-                $(".computers-score span").html(current_co_score)
-            }
-            $(".result-area").html(result);
-            // remove the active class once game is finish 
-            $(".player-area").removeClass("active");
-        }
+          // Compare player's choice with computer's choice based on Rock-Paper-Scissors rules
+          if (
+              (playerChoice == 1 && computerChoice == 3) ||
+              (playerChoice == 2 && computerChoice == 1) ||
+              (playerChoice == 3 && computerChoice == 2)
+          ) {
+              result = "You won!";
+              var currentYourScore = parseInt($(".your-score span").html());
+              currentYourScore = currentYourScore + 1;
+              $(".your-score span").html(currentYourScore)
+          } else if (
+              (playerChoice == 1 && computerChoice == 2) ||
+              (playerChoice == 2 && computerChoice == 3) ||
+              (playerChoice == 3 && computerChoice == 1)
+          ) {
+              result = "Your device wins";
+              var currentComputerScore = parseInt($(".computers-score span").html());
+              currentComputerScore = currentComputerScore + 1;
+              $(".computers-score span").html(currentComputerScore)
+          } else {
+              result = "Oh it's a Draw";
+              var currentDrawScore = parseInt($(".draw span").html());
+              currentDrawScore = currentDrawScore + 1;
+              $(".draw span").html(currentDrawScore)
+          }
 
-        
-      });
-      $( "#reset-btn" ).click(function() {
-        $(".computer-area .btn").hide();
-        $(".player-area .btn--click").show();
-        // activate game again
-        $(".player-area").addClass("active");
-        $(".result-area").html("Choose your Warrior")
-      });
-     
+          // Display result and remove the active class
+          $(".result-area").html(result);
+          $(".player-area").removeClass("active");
+      }
+
+      
+  });
+
+  $( "#reset-btn" ).click(function() {
+      // Hide computer buttons and show player buttons
+      $(".computer-area .btn").hide();
+      $(".player-area .btn--click").show();
+      // Activate the game
+      $(".player-area").addClass("active");
+      // Reset result area message
+      $(".result-area").html("Choose your Warrior");
+  });
+   
 });
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("rules-btn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// Rest of the code for modal functionality...

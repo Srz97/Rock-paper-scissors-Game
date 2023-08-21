@@ -13,6 +13,8 @@ body {
 
 .rules {
     text-align: center;
+    margin-top: 1.5%;
+    font-weight: bold;
 }
 
 /* Styling for the game area container */
@@ -30,6 +32,7 @@ body {
 .icon-name {
     font-size: small;
     display: none;
+    text-transform: capitalize;
 }
 
 /* Styling for the result area */
@@ -69,6 +72,12 @@ body {
     background-color: inherit;
 }
 
+/* show button name upon hover */
+.btn:hover .icon-name {
+    display: block;
+    font-size: small;
+    margin-top: 5px; 
+}
 /* Zoom effect on button hover */
 .btn:hover {
     transform: scale(1.5);

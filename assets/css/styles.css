@@ -75,6 +75,10 @@ body {
     cursor: -webkit-grab;
     cursor: grab;
 }
+/* Hide the reset button */
+#reset-btn {
+    display: none;
+}
 
 /* Styling for rules buttons */
 .rules button {

@@ -13,8 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Google Fonts link for more fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Inconsolata&family=Lato:wght@300&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
     
     <!-- Link to your custom stylesheet -->
@@ -23,13 +21,11 @@
     <!-- Link to jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 
-      <!-- Adding a favicon -->
-      <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <!-- Adding a favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     
     <!-- Title of the page -->
     <title>Rock paper scissors</title>
-    
 </head>
 <body>
     <!-- Rules section -->
@@ -50,10 +46,12 @@
                     <i class="far fa-hand-rock"></i>
                     <p>Rock</p>
                     <p>It wins against scissors but is defeated by paper.</p>
+                    
                     <!-- Paper icon and description -->
                     <i class="fa-solid fa-hands"></i>
                     <p>Paper</p>
                     <p>It wins against rock but loses to scissors.</p>
+                    
                     <!-- Scissors icon and description -->
                     <i class="far fa-hand-scissors"></i>
                     <p>Scissors</p>
@@ -78,35 +76,52 @@
                 <!-- Button to choose rock -->
                 <button class="btn btn--big btn--Rock btn--click" value="2">
                     <i class="far fa-hand-rock"></i>
-                    <h3 class="icon-name">Rock</h3>
+                    <div class="icon-container">
+                        <h3 class="icon-name">Rock</h3>
+                    </div>
                 </button>
+                
                 <!-- Button to choose paper -->
                 <button class="btn btn--big btn--Paper btn--click" value="3">
                     <i class="fa-solid fa-hands"></i>
-                    <h3 class="icon-name">Paper</h3>
+                    <div class="icon-container">
+                        <h3 class="icon-name">Paper</h3>
+                    </div>
                 </button>
+                
                 <!-- Button to choose scissors -->
                 <button class="btn btn--big btn--Scissors btn--click" value="1">
                     <i class="far fa-hand-scissors"></i>
-                    <h3 class="icon-name">Scissors</h3>
+                    <div class="icon-container">
+                        <h3 class="icon-name">Scissors</h3>
+                    </div>
                 </button>
             </div>
+            
             <!-- Computer area -->
             <div class="computer-area">
-                <!-- Button for computer to choose rock -->
-                <button class="btn btn--big btn--Rock btn--game-2">
+                <!-- Button to choose rock -->
+                <button class="btn btn--big btn--Rock btn--click" value="2">
                     <i class="far fa-hand-rock"></i>
-                    <h3 class="icon-name">Rock</h3>
+                    <div class="icon-container">
+                        <h3 class="icon-name">Rock</h3>
+                    </div>
                 </button>
-                <!-- Button for computer to choose paper -->
-                <button class="btn btn--big btn--Paper btn--game-3">
+                
+                <!-- Button to choose paper -->
+                <button class="btn btn--big btn--Paper btn--click" value="3">
                     <i class="fa-solid fa-hands"></i>
-                    <h3 class="icon-name">Paper</h3>
+                    <div class="icon-container">
+                        <h3 class="icon-name">Paper</h3>
+                    </div>
                 </button>
-                <!-- Button for computer to choose scissors -->
-                <button class="btn btn--big btn--Scissors btn--game-1">
+                
+                <!-- Button to choose scissors -->
+                <button class="btn btn--big btn--Scissors btn--click" value="1">
                     <i class="far fa-hand-scissors"></i>
-                    <h3 class="icon-name">Scissors</h3>
+                    <div class="icon-container">
+                        <h3 class="icon-name">Scissors</h3>
+                    </div>
                 </button>
             </div>
         </div>

@@ -226,7 +226,7 @@ body {
 /* Styling for the modal list */
 .modal-list {
     text-align: center;
-    padding: auto;
+    padding: 5px;
     list-style-type: none;
 }
 

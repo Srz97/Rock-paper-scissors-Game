@@ -100,13 +100,22 @@ The most complex function has a cyclomatic complexity value of 5 while the media
 
 
 # Bugs
- * Fixed bugs
- * While testing in light house, I discovered that the accessibility was a bit low, which was fixed by providing each button with a specific Name.
- 
-* Unfixed bugs
-* Favicon is displayed after couple of seconds.
 
-# Deployment
+ ### Accessibility Improvement
+ 
+While testing in Lighthouse, I discovered that the accessibility was a bit low, which was fixed by providing each button with a specific Name.
+
+### Favicon Not Displaying
+
+I encounterd the issues with the website's favicon not displaying correctly, I followed these steps to troubleshoot and resolve the problem:
+
+**Checked File Path** Verified that the `href` attribute and `<link>` tag for the favicon points to the correct file path relative to your website's root directory. For example:
+
+ 
+`<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">`
+
+
+## Deployment
 
 * This game was deployed to github pages.
 

@@ -26,69 +26,69 @@ window.onclick = function(event) {
 
 
 $(document).ready(function(){
+  // Initially, hide all buttons in both player and computer areas
+  $(".game-area .btn--click").hide();
 
-  $(".computer-area .btn").hide();
-  $( ".player-area.active  .btn--click" ).click(function() {
+  // Function to determine the winner and update the scores
+  function determineWinner(playerChoice, computerChoice) {
+      // Rock: 2, Paper: 3, Scissors: 1
+      if (playerChoice === computerChoice) {
+          return "Oh, it's a draw!";
+      } else if (
+          (playerChoice === 2 && computerChoice === 1) ||
+          (playerChoice === 3 && computerChoice === 2) ||
+          (playerChoice === 1 && computerChoice === 3)
+      ) {
+          return "You win!";
+      } else {
+          return "Your device wins!";
+      }
+  }
+
+  // Function to reset the game
+  function resetGame() {
+      // Hide all buttons in both player and computer areas
+      $(".game-area .btn--click").hide();
+
+      // Show player buttons and make player area active
+      $(".player-area .btn--click").show();
+      $(".player-area").addClass("active");
+
+      // Clear the result area
+      $(".result-area").html("Choose your warrior");
+  }
+
+  // Event handler for player's button click
+  $(".player-area.active .btn--click").click(function() {
       // Checking if the game is active
-      if($(".player-area").hasClass("active") == true){
-          // Hide player buttons and show the clicked button
-          $(".player-area .btn--click").hide();
-          $(this).show();
-
-          // Get the value of the clicked option
+      if ($(".player-area").hasClass("active")) {
+          // Get the value of the clicked option (1, 2, or 3)
           var playerChoice = parseInt($(this).attr("value"));
-              
-          // Generate a random integer between 1 and 3 for computer's choice
-          var computerChoice = Math.floor((Math.random() * 3) + 1);
-          
-          // Show the computer's selected button
-          $(".computer-area .btn--game-" + computerChoice).show();
 
-          // Initialize result string
-          var result = "";
+          // Generate a random integer between 1 and 3 for the computer's choice
+          var computerChoice = Math.floor(Math.random() * 3) + 1;
 
-          // Compare player's choice with computer's choice based on Rock-Paper-Scissors rules
-          if (
-              (playerChoice == 1 && computerChoice == 3) ||
-              (playerChoice == 2 && computerChoice == 1) ||
-              (playerChoice == 3 && computerChoice == 2)
-          ) {
-              result = "You won!";
-              var currentYourScore = parseInt($(".your-score span").html());
-              currentYourScore = currentYourScore + 1;
-              $(".your-score span").html(currentYourScore)
-          } else if (
-              (playerChoice == 1 && computerChoice == 2) ||
-              (playerChoice == 2 && computerChoice == 3) ||
-              (playerChoice == 3 && computerChoice == 1)
-          ) {
-              result = "Your device wins";
-              var currentComputerScore = parseInt($(".computers-score span").html());
-              currentComputerScore = currentComputerScore + 1;
-              $(".computers-score span").html(currentComputerScore)
-          } else {
-              result = "Oh it's a Draw";
-              var currentDrawScore = parseInt($(".draw span").html());
-              currentDrawScore = currentDrawScore + 1;
-              $(".draw span").html(currentDrawScore)
-          }
+          // Hide all buttons in both player and computer areas
+          $(".game-area .btn--click").hide();
 
-          // Display result and remove the active class
+          // Show only the clicked button and the computer's choice button
+          $(this).show();
+          $(".computer-area .btn--click[value='" + computerChoice + "']").show();
+
+          // Determine the winner and update the result area
+          var result = determineWinner(playerChoice, computerChoice);
           $(".result-area").html(result);
+
+          // Remove the active class from the player's area
           $(".player-area").removeClass("active");
-      
+
           // Set a timer to reset the game after 2 seconds (adjust the time as needed)
           setTimeout(function() {
-            resetGame();
-        }, 2000);
-        }
-      });
-
-      
-      function resetGame() {
-        $(".computer-area .btn").hide();
-        $(".player-area .btn--click").show();
-        $(".player-area").addClass("active");
-        $(".result-area").html("Choose your Warrior");
-    }
+              resetGame();
+          }, 2000);
+      }
   });
+
+  // Initial game setup
+  resetGame();
+});

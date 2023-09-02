@@ -81,7 +81,7 @@ For the layout of the page, I chose to create a game window with two buttons on 
 
 * This was the lighthouse result:
 * 
-![Image Eight](assets/images/image-eight.png)
+![Image Eight](assets/images/image-eight.jpg)
 
 
 * Javascript validator

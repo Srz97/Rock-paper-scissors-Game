@@ -80,7 +80,7 @@ For the layout of the page, I chose to create a game window with two buttons on 
 ![Image Seven](assets/images/image-seven.png)
 
 * This was the lighthouse result:
-* 
+  
 ![Image Eight](assets/images/image-eight.jpg)
 
 

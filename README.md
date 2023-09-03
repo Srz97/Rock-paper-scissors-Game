@@ -42,7 +42,7 @@ For the layout of the page, I chose to create a game window with two buttons on 
 * Scissors beat paper but loses to rock. Play scissors by making sure to pick the sign with your index and middle finger. The sharp scissors carve through paper with ease, but they’re too weak to stand up to a rock slamming into them.
 * Paper beats rock, but loses to scissors. Chose the icon which lay fingers flat and keep them together to play paper. The slick and flexible paper wraps around the rock to lock it down, but it can’t fight back against the sharp scissors.
   
-![Image Three](assets/images/image-three.png)
+![Image Three](assets/images/image-t.png)
 
 # Game window  
 
